@@ -95,6 +95,7 @@ func (p Header) String() string {
 		fmt.Fprintf(&buf, `"%s: %s\n"`+"\n", "MIME-Version", p.MimeVersion)
 	}
 	fmt.Fprintf(&buf, `"%s: %s\n"`+"\n", "Content-Type", p.ContentType)
+	fmt.Fprintf(&buf, `"%s: %s\n"`+"\n", "Plural-Forms", p.PluralForms)
 	fmt.Fprintf(&buf, `"%s: %s\n"`+"\n", "Content-Transfer-Encoding", p.ContentTransferEncoding)
 	if p.XGenerator != "" {
 		fmt.Fprintf(&buf, `"%s: %s\n"`+"\n", "X-Generator", p.XGenerator)
